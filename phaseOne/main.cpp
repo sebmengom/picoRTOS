@@ -8,6 +8,7 @@ int main() {
     sleep_ms(100);
   }
   std::cout << "Initialized" << '\n';
-  ledButton(1, 2);
+  // ledButton(1, 2); // Uncomment to use button.
+  ledTimed(1);
   return 0;
 }

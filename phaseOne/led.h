@@ -4,5 +4,5 @@
 #include <pico/stdlib.h>
 
 void ledButton(const int LED_PIN, const int BUTTON_PIN);
-
+void ledTimed(const int LED_PIN);
 #endif // !LED_H
