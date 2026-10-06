@@ -20,7 +20,7 @@ void ledButton(const int LED_PIN, const int BUTTON_PIN) {
       led_status = !led_status;
       std::cout << "LED: " << led_status << '\n';
       gpio_put(LED_PIN, led_status);
-      sleep_ms(150); // debounce
+      sleep_ms(250); // debounce
     }
 
     last_status = current_status;

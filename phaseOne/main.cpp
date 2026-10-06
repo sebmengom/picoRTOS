@@ -1,3 +1,4 @@
+#include "analog.h"
 #include "led.h"
 #include <iostream>
 #include <pico/stdio_usb.h>
@@ -8,7 +9,8 @@ int main() {
     sleep_ms(100);
   }
   std::cout << "Initialized" << '\n';
+  controlBrightness(26, 1);
   // ledButton(1, 2); // Uncomment to use button.
-  ledTimed(1);
+  // ledTimed(1);
   return 0;
 }
